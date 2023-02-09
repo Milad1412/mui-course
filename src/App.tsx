@@ -1,5 +1,6 @@
 import "./App.css";
-import MuiAutocomplete from "./components/MuiAutocomplete";
+import MuiAccordion from "./components/MuiAccordion";
+// import MuiAutocomplete from "./components/MuiAutocomplete";
 // import MuiCheckbox from "./components/MuiCheckbox";
 // import MuiRadioButton from "./components/MuiRadioButton";
 // import MuiTextField from './components/MuiTextField';
@@ -14,7 +15,8 @@ function App() {
       {/* <MuiTextField /> */}
       {/* <MuiRadioButton /> */}
       {/* <MuiCheckbox /> */}
-      <MuiAutocomplete />
+      {/* <MuiAutocomplete /> */}
+      <MuiAccordion />
     </div>
   );
 }
