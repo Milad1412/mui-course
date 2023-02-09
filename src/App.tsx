@@ -1,5 +1,6 @@
 import "./App.css";
-import MuiDrawer from "./components/MuiDrawer";
+import MuiSpeeddial from "./components/MuiSpeeddial";
+// import MuiDrawer from "./components/MuiDrawer";
 // import MuiBreadcrumbs from "./components/MuiBreadcrumbs";
 // import MuiAccordion from "./components/MuiAccordion";
 // import MuiAutocomplete from "./components/MuiAutocomplete";
@@ -20,7 +21,8 @@ function App() {
       {/* <MuiAutocomplete /> */}
       {/* <MuiAccordion /> */}
       {/* <MuiBreadcrumbs /> */}
-      <MuiDrawer />
+      {/* <MuiDrawer /> */}
+      <MuiSpeeddial />
     </div>
   );
 }

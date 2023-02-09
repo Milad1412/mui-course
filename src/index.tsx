@@ -10,9 +10,9 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <StyledEngineProvider injectFirst>
-      <App />
-    </StyledEngineProvider>
+    {/* <StyledEngineProvider injectFirst> */}
+    <App />
+    {/* </StyledEngineProvider> */}
   </React.StrictMode>
 );
 
