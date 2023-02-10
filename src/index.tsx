@@ -3,16 +3,38 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { StyledEngineProvider } from "@mui/material/styles";
+import {
+  createTheme,
+  StyledEngineProvider,
+  ThemeProvider,
+} from "@mui/material/styles";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
+
+const theme = createTheme({
+  components: {
+    MuiPopover: {
+      defaultProps: {
+        container: document.getElementById("root") as HTMLElement,
+      },
+    },
+    MuiPopper: {
+      defaultProps: {
+        container: document.getElementById("root") as HTMLElement,
+      },
+    },
+  },
+});
+
 root.render(
   <React.StrictMode>
-    {/* <StyledEngineProvider injectFirst> */}
-    <App />
-    {/* </StyledEngineProvider> */}
+    <StyledEngineProvider injectFirst>
+      <ThemeProvider theme={theme}>
+        <App />
+      </ThemeProvider>
+    </StyledEngineProvider>
   </React.StrictMode>
 );
 
